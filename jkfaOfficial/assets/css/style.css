@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rokkitt:wght@300&display=swap');
+
+* {
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Rokkitt', serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    background-color: #e7e7e7;
+    color: #e7e7e7;
+    margin: 0;
+}
+
+/* headings and logo */
+
+h1,
+h2,
+h3 {
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 2px;
+    color: black;
+}
+
+#logo {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Rokkitt', serif;
+    margin: 0;
+}
+
+#menu,
+#logo {
+    line-height: 40px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    color: #FACF39;
+}
+
+.active {
+    border-bottom: 2px solid #FACF39;
+}
+
+/* Header */
+.home-page-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding-left: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding-left: 2rem;
+}
+
+.thank-you-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding-left: 2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 2px;
+    color: black;
+}
+
+#logo {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+/* home page background */
+.background-image {
+    background-image: url(../images/background-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* footers */
+.home-page-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-page-footer>.social-media i {
+    font-size: 120%;
+    color: #e7e7e7;
+}
+
+.about-us-footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-top: 120px;
+}
+
+.about-us-footer>h3 {
+    text-align: center;
+}
+
+.gallery-footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-top: 120px;
+}
+
+.gallery-footer>h3 {
+    text-align: center;
+}
+
+.bookings-footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-top: 5px;
+}
+
+.bookings-footer>h3 {
+    text-align: center;
+    margin: 0;
+
+}
+
+.thank-you-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding-top: 190px;
+}
+
+footer>h3 {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media>li {
+    display: inline;
+
+}
+
+.social-media i {
+    font-size: 120%;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.social-media i:hover {
+    color: #FACF39;
+}
+
+/* CTA learn more button */
+
+.learn-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: flex-end;
+    position: absolute;
+    right: 11%;
+    top: 30%;
+}
+
+.learn-more-button {
+    border: 1px solid #f60707;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    color: #f60707;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.learn-more-button:hover {
+    border: 1px solid black;
+    color: black;
+    font-weight: bolder;
+}
+
+.quote {
+    text-align: right;
+    color: #f21313;
+    font-size: larger;
+}
+
+/* about us */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+.about-us-container-box {
+    display: flex;
+    background: #e7e7e7;
+    padding: 2%;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 20%;
+    padding: 2%;
+    border-radius: 10px;
+    height: 400px;
+    background-color: #cdcdcd;
+}
+
+.card>h3 {
+    font-size: 170%;
+}
+
+/* gallery */
+#images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding: 0 2%;
+}
+
+.gallery-card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 75%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #cdcdcd;
+}
+
+/* session times */
+.sessions-container-box {
+    display: flex;
+    background: #e7e7e7;
+    padding: 2%;
+    justify-content: space-evenly;
+}
+
+.sessions-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 4%;
+}
+
+.session-column {
+    color: black;
+}
+
+.session-column>h3 {
+    font-size: 125%;
+    color: black;
+    font-weight: bolder;
+    width: max-content;
+}
+
+.session-column>ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 600;
+    font-size: 90%;
+}
+
+/* bookings page contact information */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.contact-card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    width: 20%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #cdcdcd;
+    height: fit-content;
+    margin-top: 10%;
+}
+
+.phone-contact>h1 {
+    text-decoration: none;
+}
+
+.phone-contact>h4 {
+    color: black;
+}
+
+.mail-contact>h1 {
+    text-decoration: none;
+}
+
+.mail-contact>h4 {
+    color: black;
+}
+
+/* form section bookings page */
+.bookings-container-box {
+    display: flex;
+    background: #e7e7e7;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-decoration-line: underline;
+    color: black;
+    text-align: center;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+
+input {
+    padding: 0 5%;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    color: black;
+    font-weight: bolder;
+}
+
+#agegroup {
+    padding: 0 5%;
+    height: 50px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    color: black;
+    font-weight: bolder;
+}
+
+#inquiry {
+    padding: 0 5%;
+    height: 150px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    color: black;
+    font-weight: bolder;
+}
+
+#submit-button {
+    background-color: #e7e7e7;
+    color: black;
+    font-weight: bolder;
+    width: 200px;
+    margin-left: 30%;
+}
+
+#submit-button:hover {
+    border: 1px solid #e7e7e7;
+    background-color: black;
+    color: #e7e7e7 !important;
+    font-weight: bolder;
+}
+
+/* container box*/
+.container-box {
+    display: flex;
+    background: #e7e7e7;
+    padding: 2%;
+    justify-content: space-evenly;
+}
+
+/* Thank You */
+.thank-you-content {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+}
+
+.thank-you-content>h1 {
+    text-decoration: none;
+}
+
+/* CTA book now button */
+.button-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.about-us-button-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.gallery-button-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.sessions-button-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.book-now-button {
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    box-shadow: inset 0px -1px 8px rgb(0 0 0 / 20%);
+    background-color: #cdcdcd;
+}
+
+.book-now-button:hover {
+    border: 1px solid #e7e7e7;
+    background-color: black;
+    color: #e7e7e7;
+    font-weight: bolder;
+}
+
+/* For large to medium screens from 1600px wide and down */
+@media screen and (max-width: 1600px) {
+    .about-us-button-wrapper {
+        margin-top: 80px;
+    }
+
+    .card {
+        width: 25%;
+    }
+
+    #images {
+        margin-top: -2px;
+    }
+
+    .sessions-button-wrapper {
+        margin-top: 60px;
+    }
+
+    #submit-button {
+        margin-top: -15px;
+    }
+
+
+}
+
+/* For large to medium screens from 1560px wide and down */
+@media screen and (max-width: 1560px) {
+    #embed-map {
+        width: 500px;
+    }
+}
+
+/* For large to medium screens from 1487px wide and down */
+@media screen and (max-width: 1487px) {
+    .card>h3 {
+        font-size: 24px;
+    }
+
+    .card>p {
+        font-size: 18px;
+    }
+}
+
+/* For large to medium screens from 1440px wide and down */
+@media screen and (max-width: 1440px) {
+    #embed-map {
+        width: 450px
+    }
+}
+
+/* For large to medium screens from 1385px wide and down */
+@media screen and (max-width: 1385px) {
+    #embed-map {
+        width: 400px;
+    }
+}
+
+/* For large to medium screens from 1366px wide and down */
+@media screen and (max-width: 1366px) {
+
+    .learn-button-wrapper {
+        margin-left: 70%;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .learn-more-button {
+        font-size: 0.6em;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .card>h3 {
+        font-size: 20px;
+    }
+
+    .about-us-button-wrapper {
+        margin-top: 14px;
+    }
+
+    .gallery-button-wrapper {
+        margin-top: -18px;
+    }
+
+    .sessions-button-wrapper {
+        margin-top: 14px;
+    }
+
+    .bookings-footer {
+        position: relative;
+    }
+
+    .session-column {
+        font-size: 17px;
+    }
+
+    #embed-map {
+        width: 450px;
+    }
+
+    .contact-card {
+        width: fit-content;
+    }
+}
+
+/* For large to medium screens from 1133px wide and down */
+@media screen and (max-width: 1133px) {
+
+    .card {
+        height: 295px;
+    }
+
+    .card>h3 {
+        font-size: 17px;
+    }
+
+    .card>p {
+        font-size: 14px;
+    }
+
+    .about-us-button-wrapper {
+        margin-top: 60px;
+    }
+
+    #embed-map {
+        width: 400px;
+        margin-left: 30px;
+    }
+}
+
+/* For large to medium screens from 1024px wide and down */
+@media screen and (max-width: 1024px) {
+    .home-page-header {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .thank-you-header {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    header {
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .learn-button-wrapper {
+        font-size: 20px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .card>h3 {
+        font-size: 15px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    #embed-map {
+        width: 300px;
+    }
+
+    .thank-you-content {
+        font-size: large;
+    }
+}
+
+/* For small screens from 912px wide and down */
+@media screen and (max-width: 912px) {
+    .background-image {
+        background-image: url(../images/background-image-mq.jpg);
+    }
+
+    .learn-button-wrapper {
+        background-color: black;
+        border-radius: 10px;
+        opacity: 0.7;
+    }
+
+    .home-page-footer {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .home-page-footer>.social-media i {
+        color: black;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 500px;
+        padding: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .card>h3 {
+        font-size: larger;
+    }
+
+    .card>p {
+        font-size: large;
+    }
+
+    .about-us-button-wrapper {
+        margin-top: -5px;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .gallery-button-wrapper {
+        margin-top: -5px;
+    }
+
+    .sessions-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessions-container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .session-column {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #embed-map {
+        width: 500px;
+    }
+
+    .bookings-container-box {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+
+    #booking-form {
+        width: 325px;
+        margin: 0 auto;
+    }
+
+    #submit-button {
+        margin: 0 auto;
+    }
+
+    .contact-card {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
+
+/* For smaller screens from 675px wide and down */
+@media screen and (max-width: 675px) {
+    .learn-button-wrapper {
+        font-size: 18px;
+    }
+}
+
+
+/* For smaller screens from 625px wide and down */
+@media screen and (max-width: 625px) {
+    #menu {
+        font-size: 12px;
+    }
+
+    .social-media {
+        margin-top: 80px;
+    }
+
+    .learn-button-wrapper {
+        font-size: 15px;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-us-button-wrapper {
+        margin-top: 6px;
+    }
+
+    .card {
+        width: 300px;
+        height: fit-content;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .gallery-button-wrapper {
+        margin-top: 6px;
+    }
+}
+
+/* For smaller screens from 540px wide and down */
+@media screen and (max-width: 540px) {
+    .home-page-header {
+        height: 300px;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    .thank-you-header {
+        height: 300px;
+        font-size: 14px;
+    }
+
+    header {
+        height: 300px;
+        font-size: 14px;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .learn-button-wrapper {
+        margin-top: 150px;
+        z-index: 2;
+    }
+
+    .card {
+        width: 310px;
+        margin: 2%;
+    }
+
+    .gallery-card {
+        margin: 2%;
+    }
+
+    .about-us-button-wrapper {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .gallery-button-wrapper {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .sessions-button-wrapper {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    #embed-map {
+        width: 300px;
+        margin-left: 12px;
+    }
+
+    .sessions-button-wrapper {
+        font-size: 12px;
+    }
+
+    .thank-you-content {
+        margin-top: 60px;
+    }
+}
+
+/* For smaller screens from 510px and down */
+@media screen and (max-width: 510px) {
+    .learn-button-wrapper {
+        font-size: 10px;
+    }
+    
+}
+
+/* For smaller screens from 443px wide and down */
+@media screen and (max-width: 443px) {
+    .card {
+        width: 270px;
+    }
+
+    .session-column {
+        font-size: 15px;
+    }
+
+    .thank-you-header {
+        z-index: 3;
+    }
+
+    .thank-you-content {
+        margin-top: 100px;
+    }
+}
+
+/* For smaller screens from 360px wide and down */
+@media screen and (max-width: 360px) {
+    .learn-button-wrapper {
+        font-size: 7px;
+    }
+
+    #booking-form {
+        width: 300px;
+    }
+}
+
+/* For smaller screens from 280px wide and down */
+@media screen and (max-width: 280px) {
+    .learn-button-wrapper {
+     font-size: 6px;
+    }
+
+    .card {
+        width: 260px;
+    }
+
+    .session-column {
+        width: 180px;
+        font-size: 10px;
+    }
+
+    #embed-map {
+        width: 260px;
+    }
+
+    #booking-form {
+        width: 200px;
+    }
+
+    .contact-card {
+        font-size: 12px;
+        width: 180px;
+    }
+
+}
